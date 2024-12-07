@@ -19,10 +19,10 @@ def get_f():
         print("error: bad input, try again")
 
 lst = []
-counter = -10000
-while counter <= 10000:
+counter = -1000
+while counter <= 1000:
     lst.append(counter)
-    counter += 1
+    counter += 0.01
 df = pd.DataFrame({"x": lst})
 app = QApplication([])
 w = QWidget()
